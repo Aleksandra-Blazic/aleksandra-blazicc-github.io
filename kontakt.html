@@ -71,29 +71,29 @@
 				<div class="col-md">
 					<div class="row">
 					<h1 class="mb-3 text-center">Rezervacija</h1>
-						<form action="submit.php" method="post" class="row g-3 mb-5">
+						<form action="obrada.php" method="POST" id="for" name="for" class="row g-3 mb-5">
 							<div class="col-md-6">
 								<label for="f1" class="form-label">Name</label>
-								<input type="text" class="form-control" id="f1"/>
+								<input type="text" required="required" name="f1" class="form-control" id="f1"/>
 							</div>
 							<div class="col-md-6">
 								<label for="f2" class="form-label">Prezime</label>
-								<input type="text" class="form-control" id="f2"/>
+								<input type="text" required="required" name="f2" class="form-control" id="f2"/>
 							</div>
 							<div class="col-md-6">
 								<label for="f3" class="form-label">Email</label>
-								<input type="email" class="form-control" id="f3" placeholder="aleksandra.blazic.46.23@ict.edu.rs"/>
+								<input type="email" required="required" name="f3" class="form-control" id="f3" placeholder="aleksandra.blazic.46.23@ict.edu.rs"/>
 							</div>
 							<div class="col-md-6">
 								<label for="f4" class="form-label">Dan</label>
-								<select id="f4" class="form-control" name="f4">
+								<select id="f4" required="required" class="form-control" name="f4">
 									<option value="p1">Petak</option>
 									<option value="p2">Subota</option>
 								</select>
 							</div>
 							<div class="col-md-6">
 								<label for="f5" class="form-label">Broj osoba</label>
-								<select id="f5" class="form-control" name="f5">
+								<select id="f5" required="required" class="form-control" name="f5">
 									<option value="p1">1</option>
 									<option value="p2">4</option>
 									<option value="p3">10</option>
@@ -101,12 +101,12 @@
 							</div>
 							<div class="col-md-6">
 								<label for="f6" class="form-label">Telefon</label>
-								<input type="tel" class="form-control" id="f6" placeholder="+381 60 12 34 567"/>
+								<input type="tel" required="required" name="f6" class="form-control" id="f6" placeholder="+381 60 12 34 567"/>
 							</div>
 							
 							<div class="col-12" class="form-floating">
 								<label for="f7" class="form-label">Poruka</label>
-								<textarea id="f7"  class="form-control" placeholder="Ostavite poruku ovde"></textarea>
+								<textarea id="f7" required="required" name="f7"  class="form-control" placeholder="Ostavite poruku ovde"></textarea>
 							</div>									
 								
 							
